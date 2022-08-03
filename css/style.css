@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);  /*background, headings, buttons*/
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Very-light-gray);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.colum {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container .colum .colum-1 {
+  background-color: var(--Bright-orange);
+  padding: 45px;
+  display: grid;
+  row-gap: 40px;
+
+}
+.container .colum .colum-2 {
+  background-color: var(--Dark-cyan);
+  padding: 45px;
+  display: grid;
+  row-gap: 40px;
+}
+.container .colum .colum-3 {
+  background-color: var(--Very-dark-cyan);
+  padding: 45px;
+  display: grid;
+  row-gap: 40px;
+}
+.container .colum .colum-1 button {
+  width: 60%;
+  height: 6vh;
+  color: var(--Bright-orange);
+  border-radius: 25px;
+  border: none;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+.container .colum .colum-1 button:hover {
+  color: var(--Transparent-white);
+  background-color: var(--Bright-orange);
+  border:1px solid var(--Transparent-white);
+}
+.container .colum .colum-2 button {
+  width: 60%;
+  height: 6vh;
+  color: var(--Dark-cyan);
+  border-radius: 25px;
+  border: none;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+.container .colum .colum-2 button:hover {
+  color: var(--Transparent-white);
+  background-color: var(--Dark-cyan);
+  border:1px solid var(--Transparent-white);
+}
+.container .colum .colum-3 button {
+  width: 60%;
+  height: 6vh;
+  color: var(--Very-dark-cyan);
+  border-radius: 25px;
+  border: none;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+.container .colum .colum-3 button:hover {
+  color: var(--Transparent-white);
+  background-color: var(--Very-dark-cyan);
+  border:1px solid var(--Transparent-white);
+}
+h1 {
+  font-size: 50px;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  color: var(--Very-light-gray);
+  padding-bottom: 20px;
+}
+p {
+  color: var(--Transparent-white);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .colum {
+    grid-template-columns: 1fr;
+  }
+}
